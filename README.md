@@ -21,7 +21,7 @@ Create a dataset with **Kit CSV Loader (plugin)**, then train **Kit Dummy Classi
 
 - **Requires:** dashAI 0.10.0 or newer.
 - **Dependencies:** none.
-- **Releases:** Releases are built and signed by this repo's GitHub Actions workflow (`.github/workflows/release.yaml`): dashAI shows them as verified.
+- **Releases:** Releases carry no file: dashAI installs the source code of the tag's commit.
 
 ## License
 
