@@ -1,0 +1,37 @@
+{
+  "manifest_version": "1",
+  "id": "classification-kit",
+  "name": "Classification Kit",
+  "authors": [
+    {
+      "name": "Vicente Zamora",
+      "url": "https://github.com/vicentzamoras"
+    }
+  ],
+  "project_urls": {
+    "Homepage": "https://github.com/vicentzamoras/dashai-classification-kit",
+    "Issues": "https://github.com/vicentzamoras/dashai-classification-kit/issues"
+  },
+  "description": "A tabular classification task with its own loader, baseline model and metric.",
+  "version": "1.0.0",
+  "min_app_version": "0.10.0",
+  "components": [
+    {
+      "class": "classification_kit:KitTabularClassificationTask",
+      "type": "Task"
+    },
+    {
+      "class": "classification_kit:KitCSVDataLoader",
+      "type": "DataLoader"
+    },
+    {
+      "class": "classification_kit:KitDummyClassifier",
+      "type": "Model"
+    },
+    {
+      "class": "classification_kit:KitAccuracy",
+      "type": "Metric"
+    }
+  ],
+  "dependencies": []
+}
