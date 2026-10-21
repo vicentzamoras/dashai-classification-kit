@@ -7,6 +7,7 @@ under other names. Display names end in "(plugin)" to tell them apart.
 from DashAI.back.core.utils import MultilingualString
 from DashAI.back.dataloaders.classes.csv_dataloader import CSVDataLoader
 from DashAI.back.metrics.classification.accuracy import Accuracy
+from DashAI.back.metrics.classification.f1 import F1 as DashAIF1
 from DashAI.back.models.scikit_learn.dummy_classifier import DummyClassifier
 from DashAI.back.tasks.tabular_classification_task import TabularClassificationTask
 
@@ -39,3 +40,10 @@ class KitAccuracy(Accuracy):
     DISPLAY_NAME = MultilingualString(
         en="Kit Accuracy (plugin)", es="Exactitud Kit (plugin)"
     )
+
+
+# On purpose without the Kit prefix: dashAI already has a component named F1,
+# so the store leaves this release out (a test of its notice to the author).
+class F1(DashAIF1):
+    COMPATIBLE_COMPONENTS = [TASK]
+    DISPLAY_NAME = MultilingualString(en="Kit F1 (plugin)", es="F1 Kit (plugin)")
