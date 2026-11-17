@@ -4,9 +4,8 @@ A tabular classification task with its own loader, baseline model and metric.
 
 > A test plugin for the [dashAI](https://github.com/DashAISoftware/DashAI) plugin store.
 >
-> v1.0.1 adds an `F1` metric without the `Kit` prefix on purpose: dashAI already has a component
-> named `F1`, so the store leaves v1.0.1 out, keeps offering v1.0.0 and opens an issue that tells
-> the author why ([the notice](https://github.com/vicentzamoras/dashai-plugins/issues)).
+> Its `F1` metric has the same class name as one of dashAI's on purpose: dashAI registers it as
+> `classification-kit:F1`, next to its own `F1`, and the store accepts it.
 
 ## Components
 
@@ -16,7 +15,7 @@ A tabular classification task with its own loader, baseline model and metric.
 | `KitCSVDataLoader` | DataLoader |
 | `KitDummyClassifier` | Model |
 | `KitAccuracy` | Metric |
-| `F1` | Metric (v1.0.1) |
+| `F1` | Metric (since v1.0.1) |
 
 ## Usage
 

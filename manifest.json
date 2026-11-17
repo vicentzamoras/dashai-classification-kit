@@ -13,7 +13,7 @@
     "Issues": "https://github.com/vicentzamoras/dashai-classification-kit/issues"
   },
   "description": "A tabular classification task with its own loader, baseline model and metric.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "min_app_version": "0.10.0",
   "components": [
     {
