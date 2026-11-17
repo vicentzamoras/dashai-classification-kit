@@ -42,8 +42,8 @@ class KitAccuracy(Accuracy):
     )
 
 
-# On purpose without the Kit prefix: dashAI already has a component named F1,
-# so the store leaves this release out (a test of its notice to the author).
+# On purpose without the Kit prefix: dashAI registers it as classification-kit:F1,
+# next to its own F1.
 class F1(DashAIF1):
     COMPATIBLE_COMPONENTS = [TASK]
     DISPLAY_NAME = MultilingualString(en="Kit F1 (plugin)", es="F1 Kit (plugin)")
